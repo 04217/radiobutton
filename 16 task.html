@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radiobutton</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width:1000px;
+            height: auto;
+            margin:auto;
+           
+        }
+        .one{
+            background-color: rgb(130, 111, 148);
+            width: 500px;
+            height: 500px;
+            display: flex;
+            float: left;
+        }
+        .two{
+            background-color: rgb(158, 140, 175);
+            width:500px;
+            height: 500px;
+            float: left;
+            align-content: space-around;
+          
+        }
+        .one form{
+            margin: auto;
+        }
+        #uid{
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            margin-top: 170px;
+        }
+        #num{
+            margin-left: 20px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        p{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left; 
+            padding:10px ;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="one">
+       
+    <form>
+        <h1>Choose The Person</h1>
+        <input type="radio" onclick="x()" name="name" value="Haritha" >
+        <label>Haritha</label>
+        <br>
+        <input type="radio" onclick="y()" name="name" value="Deepthi">
+        <label>Deepthi</label>
+        <br>     
+        <input type="radio" onclick="z()" name="name" value="Hasini">
+        <label>Hasini  </label>
+        <br>
+        <input type="radio" onclick="a()" name="name" value="Haripriya">
+        <label>Haripriya</label>
+    </form>
+    </div>
+    <div class="two">
+   <h2 id="uid">Name:</h2>
+    <h3 id="num">Batch.No:</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ducimus sequi reiciendis quasi placeat suscipit est, impedit omnis neque alias ab odio aliquid magni. Iusto sequi minima adipisci labore consequatur!</p>
+   </div>
+   </div>
+    <script>
+        function x(name){
+                document.getElementById("uid").innerHTML="Name:Haritha";
+        
+                document.getElementById("num").innerHTML="Batch.No:FSD26"
+             
+        }
+        function y(name){
+                document.getElementById("uid").innerHTML="Name:Deepthi";
+                document.getElementById("num").innerHTML="Batch.No:FSD25"
+             
+        }
+        function z(name){
+                document.getElementById("uid").innerHTML="Name:Hasini";
+                document.getElementById("num").innerHTML="Batch.No:FSD26"
+             
+        }
+        function a(name){
+                document.getElementById("uid").innerHTML="Name:Haripriya";
+                document.getElementById("num").innerHTML="Batch.No:FSD25"
+             
+        }
+    </script>
+</body>
+</html>
